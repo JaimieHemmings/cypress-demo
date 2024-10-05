@@ -54,7 +54,6 @@ describe('Various Examples Testing', () => {
       cy.get('li').its(1).should('contain.text', 'another grudge')
     })
 
-    
     cy.getDataTest('grudge-list').within(() => {
       cy.get('li').should('have.length', 2)
       cy.get('li').its(0).within(() => {
